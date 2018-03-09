@@ -1,16 +1,20 @@
 {
-  "name": "",
-  "version": "",
-  "description": "",
-  "author": "",
-  "license": "",
+  "name": "ef-proxy",
+  "version": "1.00",
+  "description": "individually create a proxy server for Fossa-airbnb moc app.",
+  "author": {
+    "name": "Erin Frolli",
+    "email": "frolli.erin@gmail.com",
+    "url": "https://github.com/Fossa-bnb/ef-proxy"
+  },
+  "license": "ISC",
   "engines": {
     "node": ">=6.13.0"
   },
   "scripts": {
+    
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
   }
