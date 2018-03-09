@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
+    <!-- <link rel="stylesheet" href="/style.css"> -->
     <title>Fossa-airbnb</title>
   </head>
   <body>
@@ -16,7 +16,7 @@
     <!-- <script src="http://localhost:3000/app.js"></script>
     <script src="http://localhost:3001/app.js"></script>
     <script src="http://localhost:3002/app.js"></script> -->
-    <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:3003/../public/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
       // ReactDOM.render(
@@ -24,7 +24,7 @@
       //   document.getElementById('photoGallery')
       // );
       ReactDOM.render(
-        React.createElement(CountDown),
+        React.createElement(window.InfoPart1, {id : 4}, null),
         document.getElementById('infoPart1')
       );
       // ReactDOM.render(
@@ -32,7 +32,7 @@
       //   document.getElementById('reivews')
       // );
       ReactDOM.render(
-        React.createElement(Reviews),
+        React.createElement(window.InfoPart2, {id : 4}, null),
         document.getElementById('infoPart2')
       );
       // ReactDOM.render(
