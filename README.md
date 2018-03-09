@@ -30,6 +30,8 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 ## Development
 
+> Clone each of the related projects into your project folder. Then follow the installation instructions below and for each repo.
+
 ### Installing Dependencies
 
 > From within the root directory:
