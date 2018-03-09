@@ -6,39 +6,39 @@
     <title>Fossa-airbnb</title>
   </head>
   <body>
-    <div id="photoGallery"></div>
+    <!-- <div id="photoGallery"></div> -->
     <div id="infoPart1"></div>
-    <div id="reviews"></div>
+    <!-- <div id="reviews"></div> -->
     <div id="infoPart2"></div>
-    <div id="reservations"></div>
+    <!-- <div id="reservations"></div> -->
     <script src="/lib/react.development.js"></script>
     <script src="/lib/react-dom.development.js"></script>
-    <script src="http://localhost:3000/app.js"></script>
+    <!-- <script src="http://localhost:3000/app.js"></script>
     <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script>
+    <script src="http://localhost:3002/app.js"></script> -->
     <script src="http://localhost:3003/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
-      ReactDOM.render(
-        React.createElement(Info),
-        document.getElementById('photoGallery')
-      );
+      // ReactDOM.render(
+      //   React.createElement(Info),
+      //   document.getElementById('photoGallery')
+      // );
       ReactDOM.render(
         React.createElement(CountDown),
         document.getElementById('infoPart1')
       );
-      ReactDOM.render(
-        React.createElement(Related),
-        document.getElementById('reivews')
-      );
+      // ReactDOM.render(
+      //   React.createElement(Related),
+      //   document.getElementById('reivews')
+      // );
       ReactDOM.render(
         React.createElement(Reviews),
         document.getElementById('infoPart2')
       );
-      ReactDOM.render(
-        React.createElement(Reviews),
-        document.getElementById('reservations')
-      );
+      // ReactDOM.render(
+      //   React.createElement(Reviews),
+      //   document.getElementById('reservations')
+      // );
     </script>
   </body>
 </html>
