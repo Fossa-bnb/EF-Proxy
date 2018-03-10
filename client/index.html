@@ -2,29 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <title>Fossa-airbnb</title>
   </head>
   <body>
-    <!-- <div id="photoGallery"></div> -->
+    <div id="photoGallery"></div>
     <div id="infoPart1"></div>
     <!-- <div id="reviews"></div> -->
     <div id="infoPart2"></div>
     <!-- <div id="reservations"></div> -->
-    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <!-- <script src="http://localhost:3000/app.js"></script>
-    <script src="http://localhost:3001/app.js"></script>
+    <script src="http://localhost:3000/dist/bundle.js"></script>
+    <!-- <script src="http://localhost:3001/app.js"></script>
     <script src="http://localhost:3002/app.js"></script> -->
     <script src="http://localhost:3003/../public/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
-      // ReactDOM.render(
-      //   React.createElement(Info),
-      //   document.getElementById('photoGallery')
-      // );
+      const roomID = +window.location.pathname.split('/')[1] || 15;
       ReactDOM.render(
-        React.createElement(window.InfoPart1, {id : 4}, null),
+          React.createElement(window.Photos, {id : roomID}, null),
+          document.getElementById('photoGallery')
+      );
+      ReactDOM.render(
+        React.createElement(window.InfoPart1, {id : roomID}, null),
         document.getElementById('infoPart1')
       );
       // ReactDOM.render(
@@ -32,7 +34,7 @@
       //   document.getElementById('reivews')
       // );
       ReactDOM.render(
-        React.createElement(window.InfoPart2, {id : 4}, null),
+        React.createElement(window.InfoPart2, {id : roomID}, null),
         document.getElementById('infoPart2')
       );
       // ReactDOM.render(
