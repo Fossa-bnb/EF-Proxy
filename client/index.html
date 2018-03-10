@@ -11,16 +11,16 @@
   <body>
     <div id="photoGallery"></div>
     <div id="infoPart1"></div>
-    <!-- <div id="reviews"></div> -->
+    <div id="reviews"></div>
     <div id="infoPart2"></div>
-    <!-- <div id="reservations"></div> -->
+    <div id="reservations"></div>
     <script src="http://localhost:3000/dist/bundle.js"></script>
-    <!-- <script src="http://localhost:3001/app.js"></script>
-    <script src="http://localhost:3002/app.js"></script> -->
+    <script src="http://localhost:3001/./dist/bundle.js"></script>
+    <script src="http://localhost:3002/dist/bundle.js"></script>
     <script src="http://localhost:3003/../public/bundle.js"></script>
     <!-- see: https://reactjs.org/docs/react-without-jsx.html -->
     <script>
-      const roomID = +window.location.pathname.split('/')[1] || 15;
+      const roomID = +window.location.pathname.split('/')[1] || 20;
       ReactDOM.render(
           React.createElement(window.Photos, {id : roomID}, null),
           document.getElementById('photoGallery')
@@ -29,18 +29,18 @@
         React.createElement(window.InfoPart1, {id : roomID}, null),
         document.getElementById('infoPart1')
       );
-      // ReactDOM.render(
-      //   React.createElement(Related),
-      //   document.getElementById('reivews')
-      // );
+      ReactDOM.render(
+        React.createElement(window.Reviews, {id : roomID}, null),
+        document.getElementById('reviews')
+      );
       ReactDOM.render(
         React.createElement(window.InfoPart2, {id : roomID}, null),
         document.getElementById('infoPart2')
       );
-      // ReactDOM.render(
-      //   React.createElement(Reviews),
-      //   document.getElementById('reservations')
-      // );
+      ReactDOM.render(
+        React.createElement(window.Reservations, {id : roomID}, null),
+        document.getElementById('reservations')
+      );
     </script>
   </body>
 </html>
