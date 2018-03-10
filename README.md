@@ -26,28 +26,30 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
 - Node 6.13.0
 - MongoDB 3.6.2
-- Postgres
+- Postgres 10
 
 ## Development
 
-> Clone each of the related projects into your project folder. Then follow the installation instructions below and for each repo.
+> Clone each of the related projects into your project folder. Then follow the installation instructions below and for each repo. 
 
 ### Installing Dependencies
 
-> From within the root directory:
+- Ensure have both mongoDB and Postgres installed. 
 
+- Follow each repo's read me or package.json scripts to:
+  - seed each database
+  - run webpack to configure bundle.js
+  - run each server
+
+From within the root directory:
 ```sh
 npm install -g webpack
 npm install
 ```
 
-> Ensure have both mongoDB and Postgres installed. And seed database according to each service's package.json scripts.
+To start runing your app run:
 
-> In each service root directory:
-```sh
-npm install
-npm test
-npm run build
+``` sh
 npm start
 ```
-> In a browser navigate to localhost:4000
+__In a browser navigate to localhost:4000 or the directory you specified in the .env file__
